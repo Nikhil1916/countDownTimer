@@ -7,7 +7,26 @@
     <link rel="stylesheet" href="./src/styles.css" />
 </head>
 <body>
-    
+    <div class="container">
+        <div class="container-title">Countdown timer</div>
+        <div class="container-labels">
+            <p class="container-labels-label">Hours</p>
+            <p class="container-labels-label">Minutes</p>
+            <p class="container-labels-label">Seconds</p>
+        </div>
+        <div class="container-inputs">
+            <input type="number" oninput="this.value=this.value.slice(0,2)" class="container-input-time hour" placeholder="00">
+            <p class="colon">:</p>
+            <input type="number" oninput="this.value=this.value.slice(0,2)" class="container-input-time minute" placeholder="00">
+            <p class="colon">:</p>
+            <input type="number" oninput="this.value=this.value.slice(0,2)" class="container-input-time second" placeholder="00">
+        </div>
+        <div class="container-btns">
+            <button class="btn start">Start</button>
+            <button class="btn stop">Stop</button>
+            <button class="btn reset">Reset</button>
+        </div>
+    </div>
     <script src="./src/index.js"></script>
 </body>
 </html>
